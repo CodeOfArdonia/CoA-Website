@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Code of Ardonia</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" href="images/logo.webp" type="image/x-icon">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<script>
+		const getTimePeriod = () => {
+			const now = new Date()
+			const hours = now.getHours()
+			if (hours >= 5 && hours < 9) return 1// 5:00-9:00
+			else if (hours >= 9 && hours < 15) return 2// 9:00-15:00
+			else if (hours >= 15 && hours < 19) return 3// 15:00-19:00
+			else return 4// 19:00-5:00
+		}
+		window.onload = () => {
+			const bgElement = document.querySelector('#bg')
+			bgElement.style.setProperty('--bg-image', `url('../../images/bg${getTimePeriod()}.webp')`)
+		}
+	</script>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<img src="images/logo_w.webp" style="position:relative;top:12px;height:70%;">
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Code of Ardonia</h1>
+					<p>The team to make Songs of War Modpack</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#works">Works</a></li>
+					<li><a href="#authors">Authors</a></li>
+					<!-- <li><a href="#contact">Contact</a></li> -->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">Intro</h2>
+				<span class="image main"><img src="images/pic01.webp" alt="" /></span>
+				<p>Code of Ardonia is a team to make Songs of War Modpack.</p>
+				<p>At first the modpack is created by IAFEnvoy. As there are many works to do then form this team.</p>
+				<p>The name is inspired from <i>The Knight of Ardonia</i>.</p>
+			</article>
+
+			<!-- Works -->
+			<article id="works">
+				<h2 class="major">Works</h2>
+				<span class="image main"><img src="images/pic02.webp" alt="" /></span>
+				<p><b>Songs of War Mod</b>&nbsp;
+					(&nbsp;<a href="https://www.curseforge.com/minecraft/mc-mods/songs-of-war"
+						target="_blank">CurseForge</a>&nbsp;|&nbsp;
+					<a href="https://modrinth.com/mod/songs-of-war" target="_blank">Modrinth</a>&nbsp;)<br>
+					The Songs of War Animation Mod.
+				</p>
+				<p><b>Songs of War RPG Modpack</b>&nbsp;
+					(&nbsp;<a href="https://www.curseforge.com/minecraft/modpacks/songs-of-war-rpg"
+						target="_blank">CurseForge</a>&nbsp;|&nbsp;
+					<a href="https://modrinth.com/modpack/songs-of-war-rpg" target="_blank">Modrinth</a>&nbsp;)<br>
+					The Songs of War modpack with RPG mode.
+				</p>
+				<p><b>Ardoni Skin Generator</b>&nbsp;
+					<a href="https://gen.ardonia.net/" target="_blank">Online Website</a><br>
+					Generate and adjust Ardoni like skins.
+				</p>
+				<p><a href="works.html" target="_blank">Click here to check out more.</a></p>
+			</article>
+
+			<!-- Authors -->
+			<article id="authors">
+				<h2 class="major">Authors</h2>
+				<span class="image main"><img src="images/pic03.webp" alt="" /></span>
+				<p><b>IAFEnvoy</b>
+					<a href="http://iafenvoy.com/" target="_blank">Personal Website</a><br>
+					The leader and programmer
+				</p>
+				<p><b>HF_ColdWind</b><br>
+					Art support
+				</p>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="primary" /></li>
+						<li><input type="reset" value="Reset" /></li>
+					</ul>
+				</form>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</article>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Code of Ardonia. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
