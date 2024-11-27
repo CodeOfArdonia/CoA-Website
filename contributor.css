@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/contributor/bg/bg1.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.fade-line {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    margin: 10px 0;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.single {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    transform: scale(0.7);
+}
+
+.single-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.single-header img {
+    width: 80px;
+    height: 80px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.single-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url('images/contributor/bg/bg2.webp');
+        color: white;
+    }
+
+    .single {
+        background-color: #282c34;
+    }
+}

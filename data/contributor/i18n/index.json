@@ -1,0 +1,12 @@
+{
+    "fallback": "en_us",
+    "languages": [
+        {
+            "id": [
+                "zh-CN",
+                "zh"
+            ],
+            "file": "zh_cn"
+        }
+    ]
+}

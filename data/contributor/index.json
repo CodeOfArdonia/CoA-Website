@@ -1,0 +1,60 @@
+[
+    {
+        "name": "title.creator",
+        "people": [
+            {
+                "name": "people.sqm",
+                "role": "role.sqm",
+                "image": "images/contributor/sqm.webp"
+            },
+            {
+                "name": "people.iafenvoy",
+                "role": "role.iafenvoy",
+                "image": "images/contributor/iafenvoy.webp"
+            }
+        ]
+    },
+    {
+        "name": "title.concept",
+        "people": [
+            {
+                "name": "people.sby",
+                "role": "role.sby",
+                "image": "images/contributor/sby.webp"
+            },
+            {
+                "name": "people.sky",
+                "role": "role.sky",
+                "image": "images/contributor/sky.webp"
+            }
+        ]
+    },
+    {
+        "name": "title.art",
+        "people": [
+            {
+                "name": "people.hf",
+                "role": "role.hf",
+                "image": "images/contributor/hf.webp"
+            },
+            {
+                "name": "people.xml",
+                "role": "role.xml",
+                "image": "images/contributor/xml.webp"
+            }
+        ]
+    },
+    {
+        "name": "title.test",
+        "people": [
+            {
+                "name": "people.sj",
+                "image": "images/contributor/sj.webp"
+            },
+            {
+                "name": "people.cyrisn",
+                "image": "images/contributor/cyrisn.webp"
+            }
+        ]
+    }
+]
