@@ -30,7 +30,7 @@
         ]
     },
     {
-        "name": "title.art",
+        "name": "title.assets",
         "people": [
             {
                 "name": "people.hf",
@@ -41,6 +41,11 @@
                 "name": "people.xml",
                 "role": "role.xml",
                 "image": "images/contributor/xml.webp"
+            },
+            {
+                "name": "people.sildarflame",
+                "role": "role.sildarflame",
+                "image": "images/contributor/sildarflame.webp"
             }
         ]
     },
